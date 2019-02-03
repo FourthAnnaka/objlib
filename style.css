@@ -1,13 +1,12 @@
 body {
 				margin: 0px;
 				overflow: hidden;
-        color: orange;
-  position: fixed;
-  z-idex: 100;
-  background-color: blue;
-  font-family: 'Fahkwang', sans-serif;
+        color: lime;
+        position: fixed;
+        z-idex: 100;
+        background-color: blue;
+        font-family: 'VT323', monospace;
 
-  
 			}
 
 #info {
@@ -38,10 +37,11 @@ a {
         line-height: 60px;
 }
 
-.nav {  
+nav {  
   position: fixed;
   width: 100%;
-  
+  padding: 10 10 10 10;
+   
     
 
 }
