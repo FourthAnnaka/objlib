@@ -11,21 +11,22 @@ body {
 			}
 
 
-.nav {  
+#nav {  
   position: fixed;
   width: 100%;
   text-align: center;
+
 
          }
 
 h1{
   text-shadow: 2px 2px 5px navy;
   letter-spacing: 3px;
-  text-align:  justify;
-    text-align: center;
   padding-bottom: 20px;
     border-bottom: 3px solid white;
 margin-bottom: 0px;
+    word-spacing: 100px;
+  width:100%;
   
 
 
@@ -35,7 +36,7 @@ margin-bottom: 0px;
 a{
   color: #bbb;
 
-  {
+}
     
 
 
