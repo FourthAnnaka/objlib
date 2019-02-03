@@ -1,7 +1,13 @@
 body {
-				font-family: monospace;
 				margin: 0px;
 				overflow: hidden;
+        color: orange;
+  position: fixed;
+  z-idex: 100;
+  background-color: blue;
+  font-family: 'Fahkwang', sans-serif;
+
+  
 			}
 
 #info {
@@ -32,7 +38,10 @@ a {
         line-height: 60px;
 }
 
-.nav {  position:fi
+.nav {  
+  position: fixed;
+  width: 100%;
+  
     
 
 }
