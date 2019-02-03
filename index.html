@@ -5,22 +5,14 @@
 		<meta charset="utf-8">
 		<meta name="generator" content="Three.js Editor">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<style>
-			body {
-				font-family: sans-serif;
-				font-size: 13px;
-				background-color: #000;
-				margin: 0px;
-				overflow: hidden;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
+  
 	<body ontouchstart="">
 		<script src="js/three.min.js"></script>
 		<script src="js/app.js"></script>
-		
+    
 		<script>
-
 			var loader = new THREE.FileLoader();
 			loader.load( 'app.json', function ( text ) {
 
@@ -34,12 +26,19 @@
 				window.addEventListener( 'resize', function () {
 					player.setSize( window.innerWidth, window.innerHeight );
 				} );
-
 			} );
-
 		</script>
     
-    
+		<div id="container">
+      
+      <div id="nav">
+        <h1>
+          .OBJ LIB
+        </h1>
+      </div>
+      
+
+    </div>
     
     
 	</body>

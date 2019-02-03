@@ -1,0 +1,38 @@
+body {
+				font-family: monospace;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+#info {
+				color: lime;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        position: absolute;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+        font-size: 1.5vw;
+        line-height: 60px;
+        top:20px;
+        
+			}
+
+a {
+				color: aqua;
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        position: absolute;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+        font-size: 1.5vw;
+        line-height: 60px;
+}
+
+.nav {  position:fi
+    
+
+}
