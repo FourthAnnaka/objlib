@@ -8,6 +8,8 @@ var app = express();
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('views'));
 app.use(express.static('js'));
+app.use(express.static('css'));
+
 
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
