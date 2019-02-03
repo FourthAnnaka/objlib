@@ -6,23 +6,35 @@ body {
   background-color: blue;
   font-family: 'VT323', monospace;
   letter-spacing: 5px;
+  text-align: center;
+
 			}
 
 
 nav {  
   position: fixed;
   width: 100%;
-  padding: 10 10 10 10;
+  text-align: center;
+
          }
 
 h1{
-  text-shadow: 2px 2px 5px lavender;
+  text-shadow: 2px 2px 5px navy;
   letter-spacing: 3px;
+  text-align: center justify;
+    word-spacing: 300px;
+    text-align: center;
+  padding-bottom: 20px;
+    border-bottom: 3px solid white;
+
+
+
   
 }
 
 a{
   color: #bbb;
+
   {
     
 
