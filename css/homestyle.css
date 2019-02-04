@@ -1,13 +1,13 @@
-a {
-  font-size: 20px;
-
-
-
-}
 
 body {
-background-color: grey;
+    background-color: grey;
+    font-family: 'VT323', monospace;
+  color: white;
+}
 
+a {
+  font-size: 25px;
+  text-align: center;
 }
     
 
