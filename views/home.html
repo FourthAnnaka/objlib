@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="skeleton.css">
 
     <link rel="stylesheet" type="text/css" href="homestyle.css">
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">	
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    
+    <!-- A-Frame script -->
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+    
   </head>
     <body ontouchstart="">
         
@@ -36,100 +42,21 @@
   </div> <!-- closes container -->
       
       
-      
-      
-      
-      
-      
-   <script src="three.js"></script>
+      <a-scene environment="preset: starry">
+      <!-- Make sure to change the source for the object u just uploaded here! -->
+      <a-assets>
+        <a-asset-item id="mtl" src="https://cdn.glitch.com/126c0af0-ccb7-414c-875b-0b80f64925ed%2FModel.mtl?1548866842483"></a-asset-item>
+        <a-asset-item id="obj" src="https://cdn.glitch.com/126c0af0-ccb7-414c-875b-0b80f64925ed%2FRhubarb.obj?1548866309786"></a-asset-item>
+      </a-assets>
+       <a-entity environment="preset: forest; dressingAmount: 200"></a-entity>
 
-		<script src="OrbitControls.js"></script>
-		<script src="OBJLoader.js"></script>
-		<script src="WebGL.js"></script>
-		<script src="stats.min.js"></script>
-
-		<script>
-			if ( WEBGL.isWebGLAvailable() === false ) {
-				document.body.appendChild( WEBGL.getWebGLErrorMessage() );
-			}
-			var container, stats;
-			var camera, scene, renderer;
-			var mesh, geometry;
-			var pointLight;
-			init();
-			animate();
-			function init() {
-				container = document.createElement( 'div' );
-				document.body.appendChild( container );
-				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 20000 );
-				camera.position.z = 25;
-				//controls
-				var controls = new THREE.OrbitControls( camera );
-				controls.enableZoom = true;
-				controls.enablePan = false;
-				controls.minPolarAngle = Math.PI / 4;
-				controls.maxPolarAngle = Math.PI / 1.5;
-				//cubemap
-				var path = "https://cdn.glitch.com/5c23d146-7a96-446c-a29a-537b808db9d9%2Fdark-s_";
-				var format = '.jpg';
-				var urls = [
-						path + 'px.jpg?1538965815207' + format, path + 'nx.jpg?1538965812903' + format,
-						path + 'py.jpg?1538965813744' + format, path + 'ny.jpg?1538965812589' + format,
-						path + 'pz.jpg?1538965814846' + format, path + 'nz.jpg?1538965813486' + format
-					];
-				var reflectionCube = new THREE.CubeTextureLoader().load( urls );
-				reflectionCube.format = THREE.RGBFormat;
-				var refractionCube = new THREE.CubeTextureLoader().load( urls );
-				refractionCube.mapping = THREE.CubeRefractionMapping;
-				refractionCube.format = THREE.RGBFormat;
-				scene = new THREE.Scene();
-				scene.background = reflectionCube;
-				//lights
-				var ambient = new THREE.AmbientLight( 0xffffff, 5 );
-				scene.add( ambient );
-				pointLight = new THREE.PointLight( 0xffffff, 10 );
-				scene.add( pointLight );
-				//materials
-				var cubeMaterial3 = new THREE.MeshLambertMaterial( { color: 0xffffff, envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.9 } );
-				var cubeMaterial2 = new THREE.MeshLambertMaterial( { color: 0xffee00, envMap: refractionCube, refractionRatio: 0.95 } );
-				var cubeMaterial1 = new THREE.MeshLambertMaterial( { color: 0xffffff, envMap: reflectionCube } );
-				//models
-				var objLoader = new THREE.OBJLoader();
-				objLoader.setPath( 'https://cdn.glitch.com/08c3aa00-0ffc-46a9-a438-38a22ae8ef98%2F' );
-				objLoader.load( 'Computer_07.obj?1549253269333', function ( object ) {
-					var head = object.children[0];
-					head.scale.multiplyScalar( 10 );
-					head.position.y = -10 ;
-					head.material = cubeMaterial1;
-					var head2 = head.clone();
-					head2.position.x = -50;
-					head2.material = cubeMaterial2;
-					var head3 = head.clone();
-					head3.position.x = 100;
-					head3.material = cubeMaterial3;
-					scene.add( head, head2, head3 );
-				} );
-				//renderer
-				renderer = new THREE.WebGLRenderer();
-				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
-				container.appendChild( renderer.domElement );
-				
-			}
-			function onWindowResize() {
-				camera.aspect = window.innerWidth / window.innerHeight;
-				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth, window.innerHeight );
-			}
-			function animate() {
-				requestAnimationFrame( animate );
-				render();
-			}
-			function render() {
-				renderer.render( scene, camera );
-				stats.update();
-			}
-		</script>   
+     <a-camera position="-2 0 0" camera="active:false" wasd-controls="acceleration:8;easing:5" look-controls="" data-aframe-inspector-original-camera=""></a-camera>
+     <a-text value=".OBJ LIB" color="pink" position="-1.75 1.5 -4" scale="2 2 2 " rotation="-45 -45 0"></a-text>
+    
+     <a-entity obj-model="obj:#obj;mtl:#mtl" rotation="0 0 180" position="0 3 -2.5" scale="5 5 5"></a-entity>
+    
+      
+   </a-scene>
       
       
       
