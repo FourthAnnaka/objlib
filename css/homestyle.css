@@ -2,6 +2,14 @@ h2 {
   text-align: left;
 
 }
+
+a.title{
+font-size: 80px;
+color:white;
+  text-decoration:none;
+
+}
+
 body {
   background-color: #999;
   font-family: 'VT323', monospace;
