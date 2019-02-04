@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Stage_OBJLIB</title>
+		<meta charset="utf-8">
+		<meta name="generator" content="Three.js Editor">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">	
+  </head>
+    <body ontouchstart="">
+		<script src="/three.min.js"></script>
+		<script src="/app.js"></script>
+    
+		<script>
+			var loader = new THREE.FileLoader();
+      // Change this to load the json file
+			loader.load( 'https://cdn.glitch.com/08c3aa00-0ffc-46a9-a438-38a22ae8ef98%2FComputer_01.json?1549218167007', function ( text ) {
+
+				var player = new APP.Player();
+				player.load( JSON.parse( text ) );
+				player.setSize( window.innerWidth, window.innerHeight );
+				player.play();
+
+				document.body.appendChild( player.dom );
+
+				window.addEventListener( 'resize', function () {
+					player.setSize( window.innerWidth, window.innerHeight );
+				} );
+			} );
+		</script>
+        <div id="nav">
+          
+    <h1>
+      <a href="./index.html">.obj_lib</a>
+<!--  Change this Name      -->
+      computer_03.obj 
+<!--  Change this URL      -->
+      <a href="https://cdn.glitch.com/08c3aa00-0ffc-46a9-a438-38a22ae8ef98%2FComputer_01.obj?1549218184710">Download</a>
+    </h1>
+        </div> 
+
+	</body>
+</html>
