@@ -22,7 +22,18 @@
     
      <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="nav">
+
+    
+
+    <!-- first category -->
+        
+
+      
+  </div> <!-- closes container -->
+      
+<div id="wrapper">
+  
+    <div class="nav">
     <div id="nav">
     
       <div class="six columns">
@@ -33,31 +44,28 @@
       </div>
 
     </div>
-    
-
-    <!-- first category -->
+  
+      <a-scene environment="preset: default">
         
+     <a-entity environment="groundYScale: 4; groundColor: #445; groundtexture: walkernoise;"></a-entity>
 
-      
-  </div> <!-- closes container -->
-      
-      
-      <a-scene environment="preset: starry">
+        
       <!-- Make sure to change the source for the object u just uploaded here! -->
       <a-assets>
         <a-asset-item id="mtl" src="https://cdn.glitch.com/126c0af0-ccb7-414c-875b-0b80f64925ed%2FModel.mtl?1548866842483"></a-asset-item>
         <a-asset-item id="obj" src="https://cdn.glitch.com/126c0af0-ccb7-414c-875b-0b80f64925ed%2FRhubarb.obj?1548866309786"></a-asset-item>
       </a-assets>
-       <a-entity environment="preset: forest; dressingAmount: 200"></a-entity>
 
      <a-camera position="-2 0 0" camera="active:false" wasd-controls="acceleration:8;easing:5" look-controls="" data-aframe-inspector-original-camera=""></a-camera>
-     <a-text value=".OBJ LIB" color="pink" position="-1.75 1.5 -4" scale="2 2 2 " rotation="-45 -45 0"></a-text>
+     <a-text value=".OBJ LIB" color="white" position="-1.75 1.5 -4" scale="2 2 2 " rotation="-45 -45 0"></a-text>
     
      <a-entity obj-model="obj:#obj;mtl:#mtl" rotation="0 0 180" position="0 3 -2.5" scale="5 5 5"></a-entity>
     
       
    </a-scene>
-      
+     
+        </div>      
+
       
       
       
