@@ -44,16 +44,20 @@
       </div>
 
     </div>
+      
+      
   
-      <a-scene environment="preset: default">
+      <a-scene environment="preset: arches">
         
-     <a-entity environment="groundYScale: 4; groundColor: #445; groundtexture: walkernoise;"></a-entity>
+     <a-entity environment="groundYScale: 100; groundColor: #445; groundtexture: walkernoise;"></a-entity>
 
         
       <!-- Make sure to change the source for the object u just uploaded here! -->
       <a-assets>
         <a-asset-item id="mtl" src="https://cdn.glitch.com/126c0af0-ccb7-414c-875b-0b80f64925ed%2FModel.mtl?1548866842483"></a-asset-item>
         <a-asset-item id="obj" src="https://cdn.glitch.com/126c0af0-ccb7-414c-875b-0b80f64925ed%2FRhubarb.obj?1548866309786"></a-asset-item>
+      </a-assets>
+                <a-asset-item id="obj" src="https://cdn.glitch.com/08c3aa00-0ffc-46a9-a438-38a22ae8ef98%2FLeaf.obj?1549247566716"></a-asset-item>
       </a-assets>
 
      <a-camera position="-2 0 0" camera="active:false" wasd-controls="acceleration:8;easing:5" look-controls="" data-aframe-inspector-original-camera=""></a-camera>
