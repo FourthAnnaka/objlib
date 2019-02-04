@@ -16,8 +16,8 @@
     
      <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div id="row">
+  <div class="nav">
+    <div id="nav">
     
       <div class="six columns">
             <h1><a class="title" href="index.html">.OBJ_LIB</a></h1>
@@ -98,14 +98,14 @@
 				objLoader.setPath( 'https://cdn.glitch.com/08c3aa00-0ffc-46a9-a438-38a22ae8ef98%2F' );
 				objLoader.load( 'Computer_07.obj?1549253269333', function ( object ) {
 					var head = object.children[0];
-					head.scale.multiplyScalar( 1 );
-					head.position.y = 0 ;
+					head.scale.multiplyScalar( 10 );
+					head.position.y = -10 ;
 					head.material = cubeMaterial1;
 					var head2 = head.clone();
-					head2.position.x = 0;
+					head2.position.x = -50;
 					head2.material = cubeMaterial2;
 					var head3 = head.clone();
-					head3.position.x = 0;
+					head3.position.x = 100;
 					head3.material = cubeMaterial3;
 					scene.add( head, head2, head3 );
 				} );
