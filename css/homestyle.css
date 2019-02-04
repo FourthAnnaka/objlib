@@ -42,10 +42,40 @@ a.computer {
 a.typeface {
   font-size: 25px;
   text-align: center;
-    color: red;
+    color: pink;
 }
     
 .eleven-columns-img {
  border: 1px black solid;
 }
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* Make element full width */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+
+/* Utility Classes */
+
+/* Make element full width */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* Make sure elements don't run outside containers (great for images in columns) */
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* Float either direction */
+.u-pull-right {
+  float: right; }
+.u-pull-left {
+  float: left; }
+
+
 
