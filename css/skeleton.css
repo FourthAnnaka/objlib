@@ -35,7 +35,7 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-      background: #7133e1;}
+  }
 .column,
 .columns {
   width: 100%;
@@ -159,9 +159,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #0800ff; }
 a:hover {
-  color: #0FA0CE; }
+  color: #0000ff; }
 
 
 /* Buttons
