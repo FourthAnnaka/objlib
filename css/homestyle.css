@@ -25,6 +25,12 @@ a.computer {
   text-align: center;
     color: black;
 }
+
+a.typeface {
+  font-size: 25px;
+  text-align: center;
+    color: red;
+}
     
 
 
