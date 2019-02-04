@@ -1,5 +1,4 @@
 h2 {
-  text-align: left;
 
 }
 
@@ -7,6 +6,13 @@ a.title{
 font-size: 80px;
 color:white;
   text-decoration:none;
+
+}
+a.titleindex{
+font-size: 80px;
+color:white;
+  text-decoration:none;
+  text-align: left;
 
 }
 
@@ -18,7 +24,6 @@ body {
 }
 
 h2 {
-  text-align: left;
 
 }
 
